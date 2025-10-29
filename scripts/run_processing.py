@@ -2,7 +2,7 @@ import os
 from src.data_processing import process_dataset_folder
 
 if __name__ == "__main__":
-    base_folder = '/Users/pradhnyesh/Documents/PJT-1/dataset'
+    base_folder = '/Users/pradhnyesh/Documents/dataset'
     frames_save_root = 'saved_frames1'
     output_csv = 'all_frame_features.csv'
 
