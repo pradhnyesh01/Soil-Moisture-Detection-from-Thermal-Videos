@@ -28,7 +28,7 @@ print("SUPERVISED LEARNING COMPARISON FOR THERMAL SOIL MOISTURE CLASSIFICATION")
 print("="*80)
 
 # Load data
-df = pd.read_csv('engineered_features.csv')
+df = pd.read_csv('/Users/pradhnyesh/Documents/PJT-1/csv/engineered_features.csv')
 print(f"\n✓ Loaded {len(df)} samples")
 
 # Select top features
@@ -322,7 +322,7 @@ for i, v in enumerate(accuracies_ranked):
 ax.grid(True, alpha=0.3, axis='x')
 
 plt.tight_layout()
-plt.savefig('supervised_learning_comparison.png', dpi=150, bbox_inches='tight')
+plt.savefig('/Users/pradhnyesh/Documents/PJT-1/png/supervised_learning_comparison.png', dpi=150, bbox_inches='tight')
 print("✓ Saved: supervised_learning_comparison.png")
 plt.show()
 
@@ -356,7 +356,7 @@ for idx, (model_name, model) in enumerate(results.items()):
         ax.set_title(f'{model_name}')
 
 plt.tight_layout()
-plt.savefig('roc_curves_comparison.png', dpi=150, bbox_inches='tight')
+plt.savefig('/Users/pradhnyesh/Documents/PJT-1/png/roc_curves_comparison.png', dpi=150, bbox_inches='tight')
 print("✓ Saved: roc_curves_comparison.png")
 plt.show()
 
@@ -383,7 +383,7 @@ for model_name in results.keys():
     })
 
 results_export_df = pd.DataFrame(results_export)
-results_export_df.to_csv('supervised_learning_results.csv', index=False)
+results_export_df.to_csv('/Users/pradhnyesh/Documents/PJT-1/csv/supervised_learning_results.csv', index=False)
 print("✓ Saved: supervised_learning_results.csv")
 
 # ============================================================================
